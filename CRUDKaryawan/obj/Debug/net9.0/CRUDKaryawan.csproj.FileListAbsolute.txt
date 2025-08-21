@@ -1,0 +1,4 @@
+C:\Users\User\OneDrive\Documents\Praktek C# PBT\CRUDKaryawan\obj\Debug\net9.0\CRUDKaryawan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Documents\Praktek C# PBT\CRUDKaryawan\obj\Debug\net9.0\CRUDKaryawan.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Documents\Praktek C# PBT\CRUDKaryawan\obj\Debug\net9.0\CRUDKaryawan.AssemblyInfo.cs
+C:\Users\User\OneDrive\Documents\Praktek C# PBT\CRUDKaryawan\obj\Debug\net9.0\CRUDKaryawan.csproj.CoreCompileInputs.cache
