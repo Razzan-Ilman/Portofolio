@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="id" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Razzan Ilman Anwar | Portfolio</title>
+
+  <!-- SEO & Open Graph -->
+  <meta name="description" content="Portofolio Razzan Ilman Anwar - Web & Game Developer. Menyediakan layanan Web Development, Game Development, dan UI/UX Design.">
+  <meta name="keywords" content="Web Developer, Game Developer, Portfolio, Tailwind, Unity, Laravel">
+  <meta name="author" content="Razzan Ilman Anwar">
+  <meta property="og:title" content="Razzan Ilman Anwar | Portfolio">
+  <meta property="og:description" content="Web & Game Developer Portfolio">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/9919?v=4">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Feather Icons -->
   <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
 
@@ -13,6 +29,8 @@
   <header class="fixed w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow z-50">
     <div class="container mx-auto flex justify-between items-center p-4">
       <h1 class="text-xl font-bold">Razzan.dev</h1>
+
+      <!-- Menu Desktop -->
       <nav class="space-x-6 hidden md:block">
         <a href="#home" class="hover:text-blue-500">Home</a>
         <a href="#about" class="hover:text-blue-500">About</a>
@@ -20,16 +38,32 @@
         <a href="#projects" class="hover:text-blue-500">Projects</a>
         <a href="#contact" class="hover:text-blue-500">Contact</a>
       </nav>
-      <button id="darkToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700">
+
+      <!-- Menu Mobile Button -->
+      <button id="menuToggle" class="md:hidden p-2">
+        <i data-feather="menu"></i>
+      </button>
+
+      <!-- Dark Mode Toggle -->
+      <button id="darkToggle" class="ml-3 p-2 rounded-lg bg-gray-200 dark:bg-gray-700">
         <i data-feather="moon"></i>
       </button>
     </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobileMenu" class="hidden flex-col space-y-4 p-4 bg-white dark:bg-gray-800 md:hidden">
+      <a href="#home" class="hover:text-blue-500">Home</a>
+      <a href="#about" class="hover:text-blue-500">About</a>
+      <a href="#skills" class="hover:text-blue-500">Skills</a>
+      <a href="#projects" class="hover:text-blue-500">Projects</a>
+      <a href="#contact" class="hover:text-blue-500">Contact</a>
+    </nav>
   </header>
 
   <!-- Hero -->
   <section id="home" class="min-h-screen flex items-center justify-center text-center">
-    <div>
-      <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="avatar"
+    <div data-aos="fade-up">
+      <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="Foto Profil Razzan Ilman Anwar"
            class="w-32 h-32 mx-auto rounded-full border-4 border-blue-500 shadow-lg" />
       <h2 class="mt-4 text-3xl font-bold">Razzan Ilman Anwar</h2>
       <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">Web & Game Developer Pro</p>
@@ -38,7 +72,7 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="py-20 container mx-auto px-6">
+  <section id="about" class="py-20 container mx-auto px-6" data-aos="fade-up">
     <h2 class="text-2xl font-bold mb-6 text-center">About Me</h2>
     <p class="max-w-2xl mx-auto text-center text-gray-700 dark:text-gray-300">
       Saya seorang <b>Web & Game Developer</b> dengan passion membangun aplikasi web modern
@@ -48,7 +82,7 @@
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-800">
+  <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-800" data-aos="fade-up">
     <div class="container mx-auto px-6">
       <h2 class="text-2xl font-bold mb-12 text-center">Skills</h2>
       <div class="grid md:grid-cols-2 gap-8">
@@ -56,7 +90,7 @@
           <h3 class="font-semibold text-lg mb-4">Web Development</h3>
           <ul class="space-y-2 text-gray-700 dark:text-gray-200">
             <li>- HTML, CSS, JavaScript</li>
-            <li>- TailwindCSS, React</li>
+            <li>- TailwindCSS</li>
             <li>- Laravel, MySQL</li>
             <li>- API Integration</li>
           </ul>
@@ -65,7 +99,7 @@
           <h3 class="font-semibold text-lg mb-4">Game Development</h3>
           <ul class="space-y-2 text-gray-700 dark:text-gray-200">
             <li>- Unity (C#)</li>
-            <li>- Godot</li>
+            <li>- Scratch</li>
             <li>- JavaScript Game (Canvas, Phaser.js)</li>
             <li>- Blender (basic 3D)</li>
           </ul>
@@ -75,12 +109,12 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="py-20 container mx-auto px-6">
+  <section id="projects" class="py-20 container mx-auto px-6" data-aos="fade-up">
     <h2 class="text-2xl font-bold mb-12 text-center">Projects</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Project Card -->
       <div class="bg-white dark:bg-gray-700 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://placehold.co/600x400" alt="Project 1" class="rounded-t-xl">
+        <img src="https://placehold.co/600x400" alt="CRUD Web App dengan Laravel & MySQL" class="rounded-t-xl">
         <div class="p-4">
           <h3 class="font-semibold text-lg">Web Project Example</h3>
           <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Sebuah aplikasi web modern dengan CRUD & Tailwind.</p>
@@ -90,7 +124,7 @@
       </div>
       <!-- Project Card -->
       <div class="bg-white dark:bg-gray-700 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://placehold.co/600x400" alt="Project 2" class="rounded-t-xl">
+        <img src="https://placehold.co/600x400" alt="Mini Game Unity" class="rounded-t-xl">
         <div class="p-4">
           <h3 class="font-semibold text-lg">Game Project Example</h3>
           <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Mini-game interaktif dengan Unity.</p>
@@ -100,7 +134,7 @@
       </div>
       <!-- Project Card -->
       <div class="bg-white dark:bg-gray-700 rounded-xl shadow hover:scale-105 transition">
-        <img src="https://placehold.co/600x400" alt="Project 3" class="rounded-t-xl">
+        <img src="https://placehold.co/600x400" alt="React + API Project" class="rounded-t-xl">
         <div class="p-4">
           <h3 class="font-semibold text-lg">Another Project Example</h3>
           <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Deskripsi singkat project lainnya.</p>
@@ -112,12 +146,12 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-800">
+  <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-800" data-aos="fade-up">
     <div class="container mx-auto px-6 text-center">
       <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
       <p class="mb-6">Tertarik bekerja sama? Hubungi saya melalui:</p>
       <p class="mb-2"><i data-feather="mail" class="inline w-5 h-5"></i> ilmananwarrazzan@gmail.com</p>
-      <p class="mb-2"><i data-feather="github" class="inline w-5 h-5"></i> <a href="#" class="hover:underline">GitHub</a></p>
+      <p class="mb-2"><i data-feather="github" class="inline w-5 h-5"></i> <a href="https://github.com/razzan-ilman" target="_blank" class="hover:underline">GitHub</a></p>
       <p class="mb-2"><i data-feather="linkedin" class="inline w-5 h-5"></i> <a href="#" class="hover:underline">LinkedIn</a></p>
     </div>
   </section>
@@ -127,13 +161,34 @@
     <p class="text-sm text-gray-500 dark:text-gray-400">&copy; 2025 Razzan Ilman Anwar. All rights reserved.</p>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    // Dark mode toggle
+    AOS.init();
+
+    // Dark mode toggle with localStorage
     const darkToggle = document.getElementById('darkToggle');
     const html = document.documentElement;
-    darkToggle.addEventListener('click', () => {
-      html.classList.toggle('dark');
+    if (localStorage.getItem("theme") === "dark") {
+      html.classList.add("dark");
+    }
+    darkToggle.addEventListener("click", () => {
+      html.classList.toggle("dark");
+      if (html.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+      } else {
+        localStorage.setItem("theme", "light");
+      }
     });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Feather icons
     feather.replace();
   </script>
 </body>
