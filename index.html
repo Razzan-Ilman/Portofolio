@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Razzan Ilman Anwar | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+  <!-- Navbar -->
+  <header class="fixed w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Razzan.dev</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="#home" class="hover:text-blue-500">Home</a>
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#skills" class="hover:text-blue-500">Skills</a>
+        <a href="#projects" class="hover:text-blue-500">Projects</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <button id="darkToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700">
+        <i data-feather="moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="min-h-screen flex items-center justify-center text-center">
+    <div>
+      <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="avatar"
+           class="w-32 h-32 mx-auto rounded-full border-4 border-blue-500 shadow-lg" />
+      <h2 class="mt-4 text-3xl font-bold">Razzan Ilman Anwar</h2>
+      <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">Web & Game Developer Pro</p>
+      <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 container mx-auto px-6">
+    <h2 class="text-2xl font-bold mb-6 text-center">About Me</h2>
+    <p class="max-w-2xl mx-auto text-center text-gray-700 dark:text-gray-300">
+      Saya seorang <b>Web & Game Developer</b> dengan passion membangun aplikasi web modern
+      dan membuat game interaktif. Fokus saya adalah menggabungkan teknologi, desain, 
+      dan kreativitas untuk menghadirkan pengalaman digital yang menarik.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-800">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-12 text-center">Skills</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-4">Web Development</h3>
+          <ul class="space-y-2 text-gray-700 dark:text-gray-200">
+            <li>- HTML, CSS, JavaScript</li>
+            <li>- TailwindCSS, React</li>
+            <li>- Laravel, MySQL</li>
+            <li>- API Integration</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-4">Game Development</h3>
+          <ul class="space-y-2 text-gray-700 dark:text-gray-200">
+            <li>- Unity (C#)</li>
+            <li>- Godot</li>
+            <li>- JavaScript Game (Canvas, Phaser.js)</li>
+            <li>- Blender (basic 3D)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 container mx-auto px-6">
+    <h2 class="text-2xl font-bold mb-12 text-center">Projects</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-700 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://placehold.co/600x400" alt="Project 1" class="rounded-t-xl">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Web Project Example</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Sebuah aplikasi web modern dengan CRUD & Tailwind.</p>
+          <p class="mt-2 text-sm">Tech: Laravel, MySQL</p>
+          <a href="#" class="inline-block mt-3 text-blue-500 hover:underline">View on GitHub</a>
+        </div>
+      </div>
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-700 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://placehold.co/600x400" alt="Project 2" class="rounded-t-xl">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Game Project Example</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Mini-game interaktif dengan Unity.</p>
+          <p class="mt-2 text-sm">Tech: Unity, C#</p>
+          <a href="#" class="inline-block mt-3 text-blue-500 hover:underline">View on GitHub</a>
+        </div>
+      </div>
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-700 rounded-xl shadow hover:scale-105 transition">
+        <img src="https://placehold.co/600x400" alt="Project 3" class="rounded-t-xl">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Another Project Example</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Deskripsi singkat project lainnya.</p>
+          <p class="mt-2 text-sm">Tech: React, API</p>
+          <a href="#" class="inline-block mt-3 text-blue-500 hover:underline">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-800">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
+      <p class="mb-6">Tertarik bekerja sama? Hubungi saya melalui:</p>
+      <p class="mb-2"><i data-feather="mail" class="inline w-5 h-5"></i> ilmananwarrazzan@gmail.com</p>
+      <p class="mb-2"><i data-feather="github" class="inline w-5 h-5"></i> <a href="#" class="hover:underline">GitHub</a></p>
+      <p class="mb-2"><i data-feather="linkedin" class="inline w-5 h-5"></i> <a href="#" class="hover:underline">LinkedIn</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-white dark:bg-gray-900">
+    <p class="text-sm text-gray-500 dark:text-gray-400">&copy; 2025 Razzan Ilman Anwar. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Dark mode toggle
+    const darkToggle = document.getElementById('darkToggle');
+    const html = document.documentElement;
+    darkToggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+    });
+    feather.replace();
+  </script>
+</body>
+</html>
